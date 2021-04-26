@@ -1,6 +1,6 @@
 # About-Me
 
-![about me](https://www.pinclipart.com/picdir/big/22-224931_vector-free-all-about-me-clipart-abusadamente-png.png)
+<img align='center' src="https://www.pinclipart.com/picdir/big/22-224931_vector-free-all-about-me-clipart-abusadamente-png.png" width="230">
 
 <h1 align="center">Tariq Abulaban</h1>
 

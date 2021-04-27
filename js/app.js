@@ -4,6 +4,8 @@ let name = prompt("please enter your name to continue");
 
 alert("The entire team of About-Me is thrilled to welcome you Mr or Ms " + name + " . We hope you’ll do some amazing works here!");
 
+let score = 0 ;
+
 let q1 = prompt("My favorite color is black?").toLowerCase();
 
 while (q1 !== 'yes' && q1 !== 'no' && q1 !== 'y' && q1 !== 'n') {
@@ -16,11 +18,13 @@ if (q1 == 'y' || q1 == 'yes') {
 
     console.log(q1 + " : It's a correct answer");
     alert("You are correct");
+    score++;
 
 } else if (q1 == 'n' || q1 == 'no') {
 
     console.log(q1 + " : It's not a correct answer");
     alert("You are not correct");
+    
 
 }
 
@@ -41,6 +45,7 @@ if (q2 == 'y' || q2 == 'yes') {
 
     console.log(q2 + " : It's a correct answer");
     alert("You are correct");
+    score++;
 
 }
 
@@ -61,6 +66,7 @@ if (q3 == 'y' || q3 == 'yes') {
 
     console.log(q3 + " : It's a correct answer");
     alert("You are correct");
+    score++;
 
 }
 
@@ -76,6 +82,7 @@ if (q4 == 'y' || q4 == 'yes') {
 
     console.log(q4 + " : It's a correct answer");
     alert("You are correct");
+    score++;
 
 } else if (q4 == 'n' || q4 == 'no') {
 
@@ -101,13 +108,14 @@ if (q5 == 'y' || q5 == 'yes') {
 
     console.log(q5 + " : It's a correct answer");
     alert("You are correct");
+    score++;
 
 }
 
 alert("Thank you " + name + " for answering these five yes or no questions.Seems now you know me better than before.^^");
 
 
-let numtest = 12 ;
+let numtest = 12;
 
 let guessList = [];
 
@@ -133,15 +141,39 @@ while (guess !== numtest && guessList.length < 3) {
             guess = Number(prompt("Your guess is too high! Try again."));
         } else if (guess < numtest) {
             guess = Number(prompt("Your guess is too low! Try again."));
-        } 
+        }
 
-    } 
-    
+    }
+
 }
-if (guess == numtest){
+if (guess == numtest) {
     alert("Nice job! " + name + " You guessed the correct number! It took you " + (guessList.length + 1) + " tries!");
-}else{
-alert("Sorry " + name + " that's all your guesses! " + (guessList.length + 1) + " tries! The number was 12");
+    score++;
+} else {
+    alert("Sorry " + name + " that's all your guesses! " + (guessList.length + 1) + " tries! The number was 12");
 }
 
 
+let favfood = ['hummus', 'kofta', 'galayet bandora', 'musakhan'];
+
+let flag = false;
+
+let attempts = 0;
+
+do {
+    let guessfav = prompt('What is my favorite food?').toLowerCase();
+    for (let i = 0; i < favfood.length; i++) {
+        if (guessfav === favfood[i]) {
+            alert("Yes that's one of my favorite food");
+            score++;
+            flag = true;
+            break;
+        }
+    }
+    attempts = attempts + 1 ;
+} while (flag === false && attempts < 6);  
+
+alert("These are my favorite food : 'hummus', 'kofta', 'galayet bandora', 'musakhan' ");
+
+
+alert("The total number of correct answers and your final score is : " + score + " of the 7th");

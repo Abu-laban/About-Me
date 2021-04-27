@@ -105,3 +105,43 @@ if (q5 == 'y' || q5 == 'yes') {
 }
 
 alert("Thank you " + name + " for answering these five yes or no questions.Seems now you know me better than before.^^");
+
+
+let numtest = 12 ;
+
+let guessList = [];
+
+let guess = Number(prompt("Hello " + name + " , I'm thinking of a number between 1-20. What is it?"));
+
+
+while (guess !== numtest && guessList.length < 3) {
+
+    if (guess == null) {
+
+        alert('Quitting game now.');
+        break;
+
+    } else if (guessList.indexOf(guess) >= 0) {
+
+        guess = Number(prompt("You already guessed this number. Try again."));
+
+    } else {
+
+        guessList.push(guess);
+
+        if (guess > numtest) {
+            guess = Number(prompt("Your guess is too high! Try again."));
+        } else if (guess < numtest) {
+            guess = Number(prompt("Your guess is too low! Try again."));
+        } 
+
+    } 
+    
+}
+if (guess == numtest){
+    alert("Nice job! " + name + " You guessed the correct number! It took you " + (guessList.length + 1) + " tries!");
+}else{
+alert("Sorry " + name + " that's all your guesses! " + (guessList.length + 1) + " tries! The number was 12");
+}
+
+

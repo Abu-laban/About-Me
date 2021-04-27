@@ -176,4 +176,4 @@ do {
 alert("These are my favorite food : 'hummus', 'kofta', 'galayet bandora', 'musakhan' ");
 
 
-alert("The total number of correct answers and your final score is : " + score + " of the 7th");
+alert("The total number of correct answers and your final score is : " + score + " correct out of the 7th questions");

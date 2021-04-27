@@ -14,6 +14,13 @@
 ## General info
 This project is  some basic information about me.
 
+&
+
+There a guessing games to get know me better
+
+**There are out of the 7 questions asked**
+
+
 <h2 align="center"> Styling </h2>
 
 ### Reset CSS

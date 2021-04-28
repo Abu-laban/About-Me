@@ -6,6 +6,8 @@ alert("The entire team of About-Me is thrilled to welcome you Mr or Ms " + name 
 
 let score = 0 ;
 
+function firstQ()
+{
 let q1 = prompt("My favorite color is black?").toLowerCase();
 
 while (q1 !== 'yes' && q1 !== 'no' && q1 !== 'y' && q1 !== 'n') {
@@ -27,7 +29,11 @@ if (q1 == 'y' || q1 == 'yes') {
     
 
 }
+}
+firstQ();
 
+function seconedQ()
+{
 let q2 = prompt("My favorite food is healthy?").toLowerCase();
 
 while (q2 !== 'yes' && q2 !== 'no' && q2 !== 'y' && q2 !== 'n') {
@@ -48,7 +54,9 @@ if (q2 == 'y' || q2 == 'yes') {
     score++;
 
 }
-
+}
+seconedQ();
+function thirdQ(){
 let q3 = prompt("My favorite drink is coffee?").toLowerCase();
 
 while (q3 !== 'yes' && q3 !== 'no' && q3 !== 'y' && q3 !== 'n') {
@@ -69,6 +77,10 @@ if (q3 == 'y' || q3 == 'yes') {
     score++;
 
 }
+}
+thirdQ();
+
+function fourthQ(){
 
 let q4 = prompt("Do I Smoke?").toLowerCase();
 
@@ -90,7 +102,10 @@ if (q4 == 'y' || q4 == 'yes') {
     alert("You are not correct");
 
 }
+}
+fourthQ();
 
+function fifthQ(){
 let q5 = prompt("Did I Get Married?").toLowerCase();
 
 while (q5 !== 'yes' && q5 !== 'no' && q5 !== 'y' && q5 !== 'n') {
@@ -111,10 +126,12 @@ if (q5 == 'y' || q5 == 'yes') {
     score++;
 
 }
+}
+fifthQ();
 
 alert("Thank you " + name + " for answering these five yes or no questions.Seems now you know me better than before.^^");
 
-
+function sixthQ(){
 let numtest = 12;
 
 let guessList = [];
@@ -153,7 +170,10 @@ if (guess == numtest) {
     alert("Sorry " + name + " that's all your guesses! " + (guessList.length + 1) + " tries! The number was 12");
 }
 
+}
+sixthQ();
 
+function seventhQ(){
 let favfood = ['hummus', 'kofta', 'galayet bandora', 'musakhan'];
 
 let flag = false;
@@ -177,3 +197,5 @@ alert("These are my favorite food : 'hummus', 'kofta', 'galayet bandora', 'musak
 
 
 alert("The total number of correct answers and your final score is : " + score + " correct out of the 7th questions");
+}
+seventhQ();

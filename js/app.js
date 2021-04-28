@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 let name = prompt("please enter your name to continue");
 
